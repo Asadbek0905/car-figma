@@ -1,0 +1,30 @@
+.s2-text {
+    color: #FFF;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.312px;
+    padding-top: 120px;
+}
+
+.card-box {
+    width: 384px;
+    height: 360px;
+    border: 1px solid white;
+    margin-top: 66px;
+}
+
+.cars-text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.144px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.s2{
+    display: flex;
+    justify-content: space-between;
+}
