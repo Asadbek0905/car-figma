@@ -21,3 +21,13 @@
     border: 1px solid #EE8313;
     cursor: pointer;
 }
+.orange_secondary:hover{
+    box-shadow: 1px 1px 15px #EE8313;
+    transition: .4s;
+}
+.orange:hover{
+    background: transparent;
+    border: 1px solid #EE8313;
+    transition: .4s;
+    box-shadow: 1px 1px 15px #EE8313;
+}
