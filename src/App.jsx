@@ -1,14 +1,14 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import { navbar } from "./utiels/utiels";
+import React from "react"
+import { Navigate, Route, Router, Routes } from "react-router-dom"
+import { Navbar } from "./components/Navbar/Navbar"
+import { navbar } from "./utiels/utiels"
 import { motion, useScroll, useSpring } from "framer-motion";
+import "./index.css"
 
-import "../src/index.css"
+const App = () => {
 
+  const { scrollYProgress } = useScroll()
 
-export default function App() {
-
-  const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
@@ -16,8 +16,11 @@ export default function App() {
   });
 
   return (
-    <div>
-      <motion.div className="progress-bar" style={{ scaleX }} />
+
+    <>
+
+    <motion.div className="progress-bar" style={{ scaleX }} />
+
       <Navbar />
       <Routes>
         {navbar?.map(({ path, element, id }) => {
@@ -30,6 +33,8 @@ export default function App() {
           )
         })}
       </Routes>
-    </div>
+    </>
   )
 }
+
+export default App
