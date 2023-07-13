@@ -1,7 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import { navbar } from "./utiels/utiels";
-import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 import "../src/index.css"
