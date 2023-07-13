@@ -1,33 +1,31 @@
-
-
-
 import { Link } from "react-router-dom"
-import logo from "../../assets/logo/Group 1.svg"
+import logo1 from "../../assets/logo/Group 1.svg"
 import { navbar } from "../../utiels/utiels"
 import React from "react"
+import "../Navbar/style.css"
 import Button from "../Buttons/button"
-import "./style.css"
-
-export default function Navbar() {
-    return (
-        <nav>
-            <div className="imagelogo">
-                <img src={logo} alt="" className="logo" />
-            </div>
-            <div className="boxRightNavbar">
-                <ul className="list">
-                    {navbar?.map(({ path, id, name }) => {
-                        return (
-                            <React.Fragment key={id}>
-                                <Link to={path}><li className="list_item">{name}</li></Link>
-                            </React.Fragment>
-                        )
-                    })}
-                </ul>
-                <div className="btn">
-                    <Button className={"orange"} name={"Manage Booking"} />
-                </div>
-            </div>
-        </nav>
-    )
+export const Navbar = () => {
+  return (
+    <>
+      <nav>
+        <div className="LogoDiv">
+          <img src={logo1} alt="svg" />
+        </div>
+        <div className="Navbar_Right_Box">
+          <ul className="List_items">
+            {navbar?.map(({ path, name, id }) => {
+              return (
+                <React.Fragment key={id}>
+                  <Link to={path}><li className="list">{name}</li></Link>
+                </React.Fragment>
+              )
+            })}
+          </ul>
+          <div className="BtnDiv1">
+            <Button className={"orange"} name={"Manage Booking"}/>
+          </div>
+        </div>
+      </nav>
+    </>
+  )
 }

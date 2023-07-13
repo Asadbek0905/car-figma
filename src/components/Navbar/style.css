@@ -1,33 +1,38 @@
-.boxRightNavbar {
-    width: 800px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
 nav {
-    display: flex;
     width: 1200px;
     margin: auto;
-    margin-top: 40px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 160px;
+    margin-top: 40px;
+    margin-bottom: 165px;
 }
 
-.list {
+.Navbar_Right_Box {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.List_items {
     display: flex;
     gap: 48px;
 }
 
-.btn {
-    margin-left: 60px;
-}
-
-.list_item {
+.list {
+    color: #FFF;
     font-size: 16px;
+    font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #fff;
+    letter-spacing: 0.16px;
+}
+
+.list:active{
+    color: #EE8313;
+}
+
+.list:hover{
+    color: #EE8313;
 }
