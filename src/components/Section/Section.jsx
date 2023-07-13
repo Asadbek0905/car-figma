@@ -1,5 +1,5 @@
 import { car1 } from "../../assets";
-import { sectionIMageBoxes } from "../../utiels/utiels";
+import { sectionIMageBoxes } from "../../utiels/Utiels";
 import "./style.css"
 export default function Section() {
     return (

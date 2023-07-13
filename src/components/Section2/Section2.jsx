@@ -1,6 +1,6 @@
 
-import { cars1 } from "../../assets"
-import { cards } from "../../utiels/utiels"
+import { cards } from "../../utiels/utiels";
+
 import "./style.css"
 
 
@@ -9,7 +9,6 @@ export default function Section2() {
   return (
     <div>
       <h1 className="s2-text">Our Other Services</h1>
-
       <section className="s2">
         {cards?.map(
           ({ img,text_h3,paragraf }) => {

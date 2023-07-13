@@ -1,7 +1,7 @@
 import React from "react"
 import { Navigate, Route, Router, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
-import { navbar } from "./utiels/utiels"
+import { navbar } from "./utiels/Utiels"
 import { motion, useScroll, useSpring } from "framer-motion";
 import "./index.css"
 
