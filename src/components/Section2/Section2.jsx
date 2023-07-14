@@ -1,6 +1,6 @@
 
-import { cards } from "../../utiels/utiels";
 
+import { cards } from "../../utils/utils";
 import "./style.css"
 
 

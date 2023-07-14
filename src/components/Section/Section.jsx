@@ -1,29 +1,28 @@
-import { car1 } from "../../assets";
-import { sectionIMageBoxes } from "../../utiels/Utiels";
+import React from 'react'
 import "./style.css"
+import { sectionCarImage } from '../../utils/utils'
+
+
+
 export default function Section() {
     return (
-        <div>
-            <h1 className="section-text">Rent a Luxury Car</h1>
-
-
+        <>
+            <h1 className="text-section">Rent a Luxury Car</h1>
             <section className="section1">
-                {sectionIMageBoxes?.map(
-                    ({ hover_bottom_name, hover_top_name, image }) => {
-                        return (
-                            <>
-                                <div className="car-box">
-                                    <img src={image} alt="" className="car-image-boxes" />
-                                    <div className="hover-car-texts">
-                                        <h1 className="hover-text-top">{hover_top_name}</h1>
-                                        <h1 className="hover-text-bottom">{hover_bottom_name}</h1>
-                                    </div>
+                {sectionCarImage?.map(({ img, text_hover_bottom, text_hover_top }, index) => {
+                    return (
+                        <React.Fragment key={index}>
+                            <div className="car-box">
+                                <img src={img} alt="" className="car" />
+                                <div className="car-hover">
+                                    <h3 className="text-hover-top">{text_hover_top}</h3>
+                                    <h3 className="text-hover-bottom">{text_hover_bottom}</h3>
                                 </div>
-                            </>
-                        );
-                    }
-                )}
+                            </div>
+                        </React.Fragment>
+                    )
+                })}
             </section>
-        </div>
+        </>
     )
 }

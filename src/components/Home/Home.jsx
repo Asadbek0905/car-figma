@@ -1,17 +1,19 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
-import Section from "../Section/Section";
-import Section2 from "../Section2/Section2";
+/* eslint-disable no-unused-vars */
+
+import Header from "../Header/Header"
+import Section from "../Section/Section"
+import Section2 from "../Section2/Section2"
 
 
-export default function Home(orange) {
+
+const Home = () => {
   return (
     <div>
-      <Header/>
-      {/* <Footer/> */}
-      <Section/>
-      <Section2/>
+      <Header />
+      <Section />
+      <Section2 />
     </div>
-
   )
 }
+
+export default Home

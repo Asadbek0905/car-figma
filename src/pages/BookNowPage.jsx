@@ -1,4 +1,7 @@
-import BookNow from "../components/BookNow/BookNow";
-
+/* eslint-disable no-unused-vars */
+import BookNow from "../components/Book now/BookNow";
 
 export const BookNowPage = () => <BookNow/>
+
+
+

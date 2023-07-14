@@ -1,33 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.orange {
+.orange{
+    padding: 12px 24px ;
     background: #EE8313;
+    outline: none;
+    border: none;
+    color: #FFF;
     font-size: 16px;
-    padding: 12px 24px;
-    outline: 0;
-    border: 0;
-    color: #fff;
-    border: 2px solid #EE8313;
-}
-
-.orange_secondary {
-    color: #EE8313;
-    font-size: 16px;
-    padding: 12px 24px;
-    outline: 0;
-    border: 0;
-    background: transparent;
-    border: 2px solid #EE8313;
-}
-
-
-.orange_secondary:hover{
+    cursor: pointer;
+    border: 1px solid #EE8313;
     transition: .4s;
-    box-shadow: 1px 1px 20px #EE8313;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -ms-transition: .4s;
@@ -38,6 +18,33 @@
     border: 1px solid #EE8313;
     background: transparent;
     transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.orange_secondary{
+    color: #EE8313;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 12px 24px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #EE8313;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+
+
+.orange_secondary:hover{
+    transition: .4s;
+    box-shadow: 1px 1px 20px #EE8313;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -ms-transition: .4s;

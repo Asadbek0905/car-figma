@@ -4,28 +4,28 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    box-sizing: border-box;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
-    background: #000000;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    background: black;
     color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.container {
+
+.container{
     width: 1200px;
     margin: auto;
 }
 
 .progress-bar {
-    /* position: relative; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 6px;
-    background: #EE8313;
+    height: 5px;
+    background: red;
     transform-origin: 0%;
-}
+  }

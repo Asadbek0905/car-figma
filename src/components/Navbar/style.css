@@ -1,38 +1,36 @@
 nav {
+    display: flex;
     width: 1200px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 40px;
-    margin-bottom: 165px;
+    margin-bottom: 160px;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.Navbar_Right_Box {
+.boxRightnavbar {
     width: 800px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
 }
-
-.List_items {
-    display: flex;
-    gap: 48px;
+.btn {
+    margin-left: 60px;
 }
-
-.list {
+.list_item {
     color: #FFF;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.16px;
 }
 
-.list:active{
+.list_item:active{
     color: #EE8313;
 }
 
-.list:hover{
-    color: #EE8313;
+.list {
+    display: flex;
+    gap: 48px;
 }
+
+
